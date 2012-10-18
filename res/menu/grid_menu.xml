@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/facebook_menu_item"
+        android:title="Facebook"
+        android:icon="@drawable/icon"
+        android:showAsAction="always"
+        android:actionViewClass="com.poggled.android.phototagger.ui.widget.FacebookUserFrameLayout"/>
+    <item
+        android:id="@+id/delete_all"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/delete_all_menu"/>
+    <item
+        android:id="@+id/refresh"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/refresh_menu"/>
+    <item
+        android:id="@+id/clear_cache"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:showAsAction="never"
+        android:title="@string/clear_cache_menu"/> 
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="never"
+        android:title="@string/settings_menu"/>
+    
+</menu>

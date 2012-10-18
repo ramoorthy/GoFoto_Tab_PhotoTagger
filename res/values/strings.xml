@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoFoto</string>
+    <string name="response_format">json</string>
+    
+    <!-- Testing Google Analytics key -->
+    <string name="ga_api_key">UA-33669172-1</string>
+    
+    <!-- Email Collection -->
+    <string name="email_hint_email">email address</string>
+    <string name="email_instructions">Enter your email below:</string>
+    <string name="email_submit">SUBMIT</string>
+    <string name="email_brought_to_you_by_poggled">Brought to you by Poggled</string>
+    <string name="email_introducing_bud_light_platinum">Introducing Bud Light Platinum</string>
+    <string name="email_thank_you">Thank you!</string>
+    <string name="email_subscribe_message"> </string>
+    <string name="email_invalid_email">Invalid email!</string>
+    <string name="email_enter_email">Please enter a valid email address.</string>
+    
+    <!--  Survey -->
+    <string name="survey_submit">SUBMIT</string>
+    <string name="survey_q1">What is your gender?</string>
+    <string name="survey_q2">How old are you?</string>
+    <string name="survey_q3">On a scale of 1 through 5 how much do you enjoy our product (low to high)?</string>
+    <string name="survey_q4">How likely are you to buy this product in the future (low to high)?</string>
+    <string name="survey_title">GoFoto Survey</string>
+    <string name="survey_one">1.</string>
+    <string name="survey_two">2.</string>
+    <string name="survey_three">3.</string>
+    <string name="survey_male">Male</string>
+    <string name="survey_female">Female</string>
+    <string name="survey_age1">21–25</string>
+    <string name="survey_age2">26–30</string>
+    <string name="survey_age3">31–39</string>
+    <string name="survey_age4">40+</string>
+    <string name="survey_scale1">1</string>
+    <string name="survey_scale2">2</string>
+    <string name="survey_scale3">3</string>
+    <string name="survey_scale4">4</string>
+    <string name="survey_scale5">5</string>
+    <string name="survey_thanks">Thanks!</string>
+    <string name="survey_hey">Hey!</string>
+    <string name="survey_answer_all">Please answer all questions.</string>
+    <string name="survey_message">We appreciate your feedback.</string>
+    
+    <!--  Image Service -->
+    <string name="image_service_started">GoFoto is waiting for photos</string>
+    <string name="image_service_stopped">GoFoto has stopped waiting for photos</string>
+    <string name="btn_image_service_start">Start GoFoto Image Service</string>
+    <string name="btn_image_service_stop">Stop GoFoto Image Service</string>
+    <string name="image_service_label">GoFoto</string>
+    <string name="image_service_connected">Connected to image service</string>
+    <string name="image_service_disconnected">Disconnected from image service</string>
+    <string name="image_service_dir_error">GoFoto Image Processing Service: Unable to access output directory. You may need to delete unneccessary files or check your settings. </string>
+    <string name="image_service_error">GoFoto Image Processing Service: There was an error processing an image.</string>
+    <string name="menu_start_service">Start GoFoto Image Service</string>
+    <string name="usb_start_search">Searching USB device for new photos</string>
+    
+    <plurals name="usb_transfer">
+        <item quantity="one">Transferring one photo.</item>
+        <item quantity="other">Transferring %1$d / %2$d photos.</item>
+    </plurals>
+    
+    <string name="no_results">No items found.</string>
+    
+    <string name="email_subject">Your GoFoto photo from %1$tD</string>
+    <!-- preferences -->
+    <string name="pref_header_intent_extra_key">Settings</string>
+    <string name="pref_gallery_header_title">Gallery</string>
+    <string name="pref_gallery_header_summary">Select a gallery for upload and display</string>
+    <string name="pref_watermark_header_title">Watermark</string>
+    <string name="pref_watermark_header_summary">Settings for watermarking photos</string>
+    <string name="pref_frames_header_title">Frames</string>
+    <string name="pref_frames_header_summary">Settings for photo frames</string>
+    
+    <string name="pref_frame_enabled">frame_enabled</string>
+    <string name="pref_frame_enabled_title">Decoration Style</string>
+    <string name="pref_watermark_key">watermark</string>
+    <string name="pref_watermark_title">Watermark</string>
+    <string name="pref_watermark_summary">Select the watermark for incoming photos</string>
+    <string name="pref_frame_key">frame_name</string>
+    <string name="pref_frame_portrait_image_key">frame_portrait</string>
+    <string name="pref_frame_landscape_image_key">frame_landscape</string>
+    <string name="pref_frame_title">Frame</string>
+    <string name="pref_frame_summary">Select the frame for incoming photos</string>
+    
+    <!-- tabs -->
+    <string name="tab_photos">Photos</string>
+    <string name="tab_emails">Emails</string>
+    <string name="tab_survey">Survey</string>
+    
+    <!--  menus -->
+    <string name="imageview_description">Poggled party photos!</string>
+    <string name="delete_all_menu">Clear All Photos</string>
+    <string name="refresh_menu">Refresh</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="settings_menu">Settings</string>
+    <string name="logout_menu">Log Out</string>
+    <string name="send_email_menu">Email Photo</string>
+    
+    <string name="menu_mode">Modes</string>
+    <string name="menu_tag">Tag Photos</string>
+    <string name="menu_email">Collect E-mails</string>
+    <string name="menu_survey">Survey</string>
+    
+    <string name="menu_export">Export</string>
+    <string name="menu_clear_data">Clear Data</string>
+    
+    <string name="delete_all_watermark_menu">Delete All Watermarks</string>
+    
+    <string name="clear_cache_complete">Caches have been cleared</string>
+    
+    <!-- export and refresh email/survey data -->
+    <string name="export_subject">GoFoto Emails and Surveys %1$tD</string>
+    <string name="clear_clear">Clear data</string>
+    <string name="clear_are_you_sure">Are you sure you want to clear the data in the CSVs?\n\nMake sure to export them before doing this.\n\nThis cannot be undone.</string>
+    
+    <!-- photo_grid_fragment -->
+    <string name="txt_share_instructions">Click on a photo above to share instantly</string>
+    <string name="dialog_delete_all_title">Confirm clear</string>
+    <plurals name="dialog_delete_all_text">
+        <item quantity="one">Are you sure you want to clear this photo?\n\n(This will not delete it from the SD card)</item>
+        <item quantity="other">Are you sure you want to clear %1$d photos?\n\n(This will not delete them from the SD card)</item>
+    </plurals>
+    <string name="dialog_delete_all_progress_title">Status</string>
+    <string name="dialog_delete_all_progress_text">Clearing photos...</string>
+     
+    <!-- photo_detail_fragment -->
+    <string name="btn_facebook_signin">Tag on Facebook</string>
+    <string name="register_account_source">gofoto-android</string>
+    
+    <!--  fb_dialog -->
+    <string name="checktxt_create_account">Create Poggled Account</string>
+    
+    <!-- tag_photo_fragment -->
+    <string name="btn_upload">Done Tagging. Send to Facebook.</string>
+    <string name="tag_photo_activity_label">Tap on the image to add a tag</string>
+    <string name="txt_tag_instructions"> \nTap a face to tag!\n </string>
+    <string name="friend_filter_hint">Type a friend\'s name</string>
+    <string name="friend_list_empty_text">No results found.</string>
+    
+    <!-- frame activity -->
+    <string name="frame_loading_text">Loading frames...</string>
+    <string name="frame_empty_text">No frames found.</string>
+    <string name="frame_error_text">There was a problem retrieving frames from the server.</string>
+</resources>

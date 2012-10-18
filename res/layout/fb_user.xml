@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layoutFacebookLoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/btn_facebook_holo_dark" >
+        <ImageView
+        android:id="@+id/imgFbPic"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/facebook_default" />
+
+		    <TextView
+		        android:id="@+id/txtFbName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="User Name"
+		        android:textAppearance="?android:attr/textAppearanceMedium" 
+		        android:layout_marginLeft="8dip"/>
+    </LinearLayout>
+    
+   
+    <TextView
+        android:id="@+id/txtFbLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Log Out"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_marginLeft="8dip"
+        android:gravity="center"
+        />
+
+</LinearLayout>

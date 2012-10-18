@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_parent_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:id="@+id/fb_content"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:minHeight="525dp"
+        
+         >
+
+    </FrameLayout>
+    
+    <LinearLayout
+            android:id="@+id/extra_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="right|center_vertical"
+            android:background="@android:color/white"
+            android:padding="10dip">
+
+        <CheckedTextView
+            android:id="@+id/checktxt_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checktxt_create_account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            
+            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:layout_marginBottom="4dip"
+            android:textColor="#FF6D84B4"
+            android:checked="true"
+				    android:clickable="true"
+				    android:focusable="true"
+				    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+				    android:gravity="right|center_vertical" 
+            />
+
+       <!--  <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Poggled account"
+            android:textAppearance="?android:attr/textAppearanceMedium" /> 
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />-->
+
+        
+            
+        </LinearLayout>
+
+    
+
+</LinearLayout>

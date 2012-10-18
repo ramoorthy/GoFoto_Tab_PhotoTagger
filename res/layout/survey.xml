@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/generic_survey_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/survey_title"
+        android:textColor="#fff"
+        android:textSize="32dp"
+        android:layout_marginTop="125dp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="350dp" >
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/survey_one"
+            android:textColor="#fff"
+            android:textSize="44dp" />
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/num1"
+            android:layout_toRightOf="@id/num1"
+            android:text="@string/survey_q1"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+
+        <RadioGroup
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/q1"
+            android:layout_below="@id/q1"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rad_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginRight="35dp"
+                android:text="@string/survey_male" />
+
+            <RadioButton
+                android:id="@+id/rad_female"
+                android:layout_width="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginRight="35dp"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/num1"
+            android:layout_toRightOf="@id/answer1"
+            android:text="@string/survey_q2"
+            android:textColor="#fff"
+            android:layout_marginLeft="35dp"
+            android:textSize="24dp" />
+
+        <RadioGroup
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/q2"
+            android:layout_below="@id/q2"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rad_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/survey_age1" />
+
+            <RadioButton
+                android:id="@+id/rad_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/survey_age2" />
+
+            <RadioButton
+                android:id="@+id/rad_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/survey_age3" />
+
+            <RadioButton
+                android:id="@+id/rad_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/survey_age4" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="350dp" >
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/survey_two"
+            android:textColor="#fff"
+            android:textSize="44dp" />
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/num2"
+            android:layout_toRightOf="@id/num2"
+            android:text="@string/survey_q3"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+
+        <RadioGroup
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/q3"
+            android:layout_below="@id/q3"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rad_enjoy_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale1" />
+
+            <RadioButton
+                android:id="@+id/rad_enjoy_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale2" />
+
+            <RadioButton
+                android:id="@+id/rad_enjoy_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale3" />
+
+            <RadioButton
+                android:id="@+id/rad_enjoy_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale4" />
+
+            <RadioButton
+                android:id="@+id/rad_enjoy_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale5" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp" >
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/survey_three"
+            android:textColor="#fff"
+            android:textSize="44dp" />
+
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/num3"
+            android:layout_toRightOf="@id/num3"
+            android:text="@string/survey_q4"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+
+        <RadioGroup
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/q4"
+            android:layout_below="@id/q4"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rad_buy_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale1" />
+
+            <RadioButton
+                android:id="@+id/rad_buy_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale2" />
+
+            <RadioButton
+                android:id="@+id/rad_buy_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale3" />
+
+            <RadioButton
+                android:id="@+id/rad_buy_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale4" />
+
+            <RadioButton
+                android:id="@+id/rad_buy_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="36dp"
+                android:text="@string/survey_scale5" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/survey_submit"
+        android:textColor="#999"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="32dp" />
+
+</LinearLayout>

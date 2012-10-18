@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+    <header
+        android:fragment="com.poggled.android.phototagger.ui.prefs.SettingsActivity$SettingsFragment"
+        android:title="@string/pref_gallery_header_title"
+        android:summary="@string/pref_gallery_header_summary" >
+        <extra
+            android:name="@string/pref_header_intent_extra_key"
+            android:value="@string/pref_gallery_header_title" />
+    </header>
+    
+    <header
+        android:fragment="com.poggled.android.phototagger.ui.prefs.SettingsActivity$SettingsFragment"
+        android:title="@string/pref_watermark_header_title"
+        android:summary="@string/pref_watermark_header_summary" >
+        <extra
+            android:name="@string/pref_header_intent_extra_key"
+            android:value="@string/pref_watermark_header_title" />
+    </header>
+    <header
+        android:fragment="com.poggled.android.phototagger.ui.prefs.SettingsActivity$SettingsFragment"
+        android:title="@string/pref_frames_header_title" 
+        android:summary="@string/pref_frames_header_summary">
+        <extra
+            android:name="@string/pref_header_intent_extra_key"
+            android:value="@string/pref_frames_header_title" />
+    </header>
+
+</preference-headers>

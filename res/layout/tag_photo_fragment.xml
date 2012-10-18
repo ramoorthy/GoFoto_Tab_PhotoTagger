@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+         <ProgressBar
+        android:id="@+id/tagProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    -->
+
+    <RelativeLayout
+        android:id="@+id/frameTagImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnUpload"
+        android:layout_toLeftOf="@+id/txtTagInstructions" >
+
+        <com.poggled.android.phototagger.ui.widget.TagableImageView
+            android:id="@+id/tagImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/imageview_description"
+             />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_facebook_holo_dark"
+        android:text="@string/btn_upload"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTagInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/blue_rounded"
+        android:drawableBottom="@drawable/arrow_left_white"
+        android:drawablePadding="16dp"
+        android:drawableTop="@drawable/arrow_left_white"
+        android:gravity="center_vertical"
+        android:minLines="3"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:singleLine="false"
+        android:text="@string/txt_tag_instructions"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout> 

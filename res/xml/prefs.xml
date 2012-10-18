@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_frame_enabled"
+        android:title="@string/pref_frame_enabled_title" />
+
+    <Preference
+        android:key="@string/pref_watermark_key"
+        android:summary="@string/pref_watermark_summary"
+        android:title="@string/pref_watermark_title" >
+        <intent
+            android:targetClass="com.poggled.android.phototagger.ui.prefs.WatermarkActivity"
+            android:targetPackage="com.poggled.android.phototagger" />
+    </Preference>
+    <Preference
+        android:dependency="@string/pref_frame_enabled"
+        android:key="@string/pref_frame_key"
+        android:summary="@string/pref_frame_summary"
+        android:title="@string/pref_frame_title" >
+        <intent
+            android:targetClass="com.poggled.android.phototagger.ui.prefs.FrameActivity"
+            android:targetPackage="com.poggled.android.phototagger" />
+    </Preference>
+
+</PreferenceScreen>

@@ -1,2 +1,4 @@
-GoFoto_Tab_PhotoTagger
-======================
+PhotoTagger
+===========
+
+Photo tagger droid app

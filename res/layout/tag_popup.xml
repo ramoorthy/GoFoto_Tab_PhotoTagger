@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    android:layout_margin="8dip"
+    android:padding="8dip">
+
+    <include
+        android:id="@+id/layoutFacebookMe"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        layout="@layout/friends_list_item" />
+		<View android:id="@+id/Separator"
+		  android:layout_width="match_parent"
+		  android:layout_height="1dp"
+		  android:background="?android:attr/listDivider" />
+		
+		<!-- This EditText is set as input type "textVisiblePassword" to disable the spelling suggestions 
+		     that usually appear with an EditText.  Normally "textNoSuggestions" or "textFilter" would work
+		     but suggestions were still appearing on certain manufacturer virtual keyboards (e.g. Asus Transformer) -->
+		     
+    <EditText
+        android:id="@+id/editTextSearchFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="textVisiblePassword"
+        android:hint="@string/friend_filter_hint"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        style="@android:style/Widget.Holo.Light.EditText">
+        
+        <requestFocus />
+        </EditText>
+    
+    
+    
+    <ListView
+        android:id="@+id/listFacebookFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.ListView">
+    </ListView>
+    <TextView 
+		    android:id="@+id/listFacebookFriendsEmpty"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/friend_list_empty_text" 
+		    android:textAppearance="?android:attr/textAppearanceLarge"  
+		    android:gravity="center"></TextView>  
+</LinearLayout>
