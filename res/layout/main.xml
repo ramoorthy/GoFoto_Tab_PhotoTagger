@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
 <!--    <FrameLayout android:id="@+id/files_frag" 
         android:layout_weight="1"
         android:layout_width="0px" 
@@ -14,15 +14,42 @@
         android:layout_width="0px" 
         android:layout_height="match_parent"
          />
-   
+
+   <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal" >
+
+       <Button
+           android:id="@+id/btnPrevious"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="300dp"
+           android:drawablePadding="1dp"
+           android:text="@string/btnPrevious"
+           android:textColor="#FFFFFF"
+           android:textSize="15dp"
+           android:textStyle="bold" />
+
        <GridView
-        android:id="@+id/gridView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+           android:id="@+id/gridView"
+           android:layout_width="153dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.95"
+           android:numColumns="5" >
+       </GridView>
 
-        android:numColumns="6" >
-
-    </GridView>
-   
+       <Button
+           android:id="@+id/btnNext"
+           android:layout_width="90dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="300dp"
+           android:drawablePadding="1dp"
+           android:text="@string/btnNext"
+           android:textColor="#FFFFFF"
+           android:textSize="15dp"
+           android:textStyle="bold" />
+   </LinearLayout>
 
 </LinearLayout>

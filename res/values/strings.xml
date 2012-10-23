@@ -4,6 +4,8 @@
     <string name="app_name">GoFoto</string>
     <string name="response_format">json</string>
     
+        <string name="btnNext">Next</string>
+    <string name="btnPrevious">Previous</string>
     <!-- Testing Google Analytics key -->
     <string name="ga_api_key">UA-33669172-1</string>
     
